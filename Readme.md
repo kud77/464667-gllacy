@@ -2,6 +2,7 @@
 
 * Студент: [Aleksandr Kudinov](https://up.htmlacademy.ru/htmlcss/18/user/464667).
 * Наставник: `Неизвестно`.
+* Наставник: `Сергей Кравченко`.
 
 ---
 
