@@ -11,7 +11,7 @@
           <a href="index.html"><img src="img/logo.png" alt="Логотип Глейси" width="" height=""></a>
           <ul class="site-nav">
             <li class="has-children">
-            <a href="catalog.html">Каталог</a>
+              <a href="catalog.html">Каталог</a>
               <ul class="submenu">
                 <li class="submenu-item"><a href="#">Новинки</a></li>
                 <li class="submenu-item submenu-item-current"><a href="#">Сливочное</a></li>
@@ -24,9 +24,46 @@
             <li><a href="#">О компании</a></li>
           </ul>
           <ul class="user-nav">
-          <li><a class="search-link">Поиск</li>
-          <li><a class="login-link">Вход</li>
-          <li><a class="cart-link cart-link-full">2 товара</li>
+            <li>
+              <a class="search-link" href="#">Поиск</a>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <input type="search" name="search" id="search-field" required>
+                <label for="search-field">Что ищем?</label>
+              </form>
+            </li>
+            <li>
+              <a class="login-link">Вход</a>
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+                <input type="email" name="email" id="mail-field" required>
+                <label for="mail-field">Электронная почта</label>
+                <input type="password" name="password" id="pass-field" required>
+                <label for="pass-field">Пароль</label>
+                <a class="submit-btn btn" href="#">Войти</a> <!-- или это через input subbmit? -->
+              </form>
+              <a href="#">Забыли пароль?</a><br> <!-- Или это внутри формы? Или в div? -->
+              <a href="#">Новая регистрация?</a>
+            </li>
+            <li>
+              <a class="cart-link cart-link-full">2 товара</a>
+              <table class="cart-list">
+                <tr>
+                  <td><a class="cart-del-item" href="#">х</a></td>
+                  <td><img src="img/icecream-orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="" height=""></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х <span>200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><a class="cart-del-item" href="#">х</a></td>
+                  <td><img src="img/icecream-strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="" height=""></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х <span>300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
+              <b>Итого: 750 руб.</b>
+              <a class="send-order-btn btn" href="#">Оформить заказ</a>
+            </li>
           </ul>
         </nav>
         <section class="contact-header">
@@ -43,11 +80,37 @@
           <li>Каталог</li>
           <li>Сливочное</li>
         </ul>
+
         <h1 class="main-title">Сливочное мороженое</h1>
 
         <section class="catalog-filter">
           <form class="filter-form" method="get" action="https://echo.htmlacademy.ru/">
-          <!-- пока что не понял как все сделать -->
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Сортировка:</legend>
+              <select id="filter-sort">
+                <option value="popular" selected>по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat-content">по жирности</option>
+              </select>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <!-- тут должен быть фильтр по цене -->
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Жирность:</legend>
+              <ul>
+                <li>
+                  <input class="fat-radio-input" type="radio" name="fat-content" value="less-10%" checked>
+                  <label for="fat-content">0%</label>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+            </fieldset>
           </form>
         </section>
 
@@ -174,7 +237,7 @@
             <li><a href="#">Для поставщиков</a></li>
             <li><a href="#">О производстве</a></li>
             <li><a href="#">Наши документы</a></li>
-            <li><a href="#">Экологические стандарты</li>
+            <li><a href="#">Экологические стандарты</a></li>
           </ul>
         </div>
         <div class="copyright">
