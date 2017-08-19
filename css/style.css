@@ -3,15 +3,14 @@ body {
   line-height: 22px;
   color: #323232;
   font-weight: normal;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .slide-title {
   font-size: 60px;
-  line-height: 60,35px;
+  line-height: 61px;
   color: #ffffff;
   font-weight: bold;
-  font-family: "Roboto";
 }
 
 .banner-item-title {
@@ -19,6 +18,5 @@ body {
   line-height: 41px;
   color: #ffffff;
   font-weight: bold;
-  font-family: "Roboto";
 }
 
