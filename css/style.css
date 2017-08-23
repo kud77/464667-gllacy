@@ -1,22 +1,21 @@
 body {
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
-  font-weight: normal;
-  font-family: "Roboto", Arial, sans-serif;
 }
 
 .slide-title {
   font-size: 60px;
-  line-height: 61px;
-  color: #ffffff;
+  line-height: 1.2;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .banner-item-title {
   font-size: 35px;
-  line-height: 41px;
-  color: #ffffff;
+  line-height: 1.2;
   font-weight: bold;
+  color: #ffffff;
 }
 
