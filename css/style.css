@@ -1,8 +1,36 @@
-body {
+html, body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  font-weight: 400;
+  line-height: 1.2;
   color: #323232;
+  background-color: #849d8f;
+}
+
+a {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ee6040;
+  border: none;
+}
+.btn:hover,
+.btn:focus {
+    background-color: #f07963;
+  }
+.btn:active {
+  background-color: #db5238;
 }
 
 .slide-title {
@@ -19,3 +47,146 @@ body {
   color: #ffffff;
 }
 
+.main-nav-list a {
+  font-weight: 700;
+}
+
+.main-nav-list a:hover,
+.user-nav a:hover
+ {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.user-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: ;
+}
+
+.contact {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contacts-phone {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.banner-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.banners article {
+  background-image: url("../img/bg-banner-1.jpg");
+}
+.banners article:last-child {
+  background-image: url("../img/bg-banner-2.jpg");
+}
+
+.catalog-item {
+  text-align: center;
+}
+.catalog-item-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.catalog-item-price {
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.catalog-item-price span {
+  font-size: 30px;
+}
+.btn-quick {
+  font-size: 18px;
+  color: #fefefe;
+  background-color: #ec583c;
+}
+
+.features {
+  background-image: url("../img/features-pattern.jpg");
+}
+.features-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.blog {
+  background-image: url("../img/bg-blog.jpg");
+}
+.blog-title {
+  font-weight: 500;
+}
+.blog-link {
+  font-size: 24px;
+  font-weight: 700;
+  color: #323232;
+}
+.subscribe {
+  background-color: #f8f7f4;
+}
+
+.contacts {
+  background-color: #ffffff;
+}
+.contacts-address {
+  font-size: 14px;
+}
+.contacts-address b {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-info-list {
+  font-size: 13px;
+}
+.footer-info-list li:first-child {
+font-weight: 700;
+}
+.copyright {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/* каталог */
+
+.breadcrumbs {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.main-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.catalog-filter {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.catalog-filter option, label {
+  font-size: 16px;
+}
+
+.paginator a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.page-current {
+  color: #323232;
+  background-color: #ffffff;
+}
