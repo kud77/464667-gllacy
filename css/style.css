@@ -162,6 +162,18 @@ font-weight: 700;
 
 /* каталог */
 
+.cart-table {
+  font-size: 13px;
+  background-color: #f8f7f4;
+}
+.cart-table span {
+  color: #999999;
+}
+.cart-summary {
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .breadcrumbs {
   font-size: 14px;
   font-weight: 400;
