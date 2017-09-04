@@ -1,4 +1,4 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -11,26 +11,37 @@ html, body {
 
 a {
   color: #ffffff;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-ul {
+.submenu,
+.main-nav-list,
+.user-nav,
+.slider-list,
+.hit-item,
+.features-title,
+.footer-info-list,
+.breadcrumbs  {
   list-style: none;
 }
 
 .btn {
-  font: inherit;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 32px;
+  font-weight: bold;
   text-align: center;
-  vertical-align: middle;
-  background-color: #ee6040;
+  background: linear-gradient(180deg, #f26843, #e74b36);
   border: none;
 }
 .btn:hover,
 .btn:focus {
-    background-color: #f07963;
+    background: linear-gradient(180deg, #f58669, #ec6f5e);
   }
+
 .btn:active {
-  background-color: #db5238;
+  background: linear-gradient(180deg, #d74632, #e1613e);
+  color: #fceeec;
 }
 
 .slide-title {
@@ -49,6 +60,7 @@ ul {
 
 .main-nav-list a {
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .main-nav-list a:hover,
@@ -61,7 +73,6 @@ ul {
 .user-nav a {
   font-size: 14px;
   font-weight: 500;
-  color: ;
 }
 
 .contact {
@@ -100,6 +111,7 @@ ul {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
+  text-decoration: underline;
 }
 .catalog-item-price {
   font-size: 45px;
@@ -133,6 +145,7 @@ ul {
   font-size: 24px;
   font-weight: 700;
   color: #323232;
+  text-decoration: underline;
 }
 .subscribe {
   background-color: #f8f7f4;
@@ -155,9 +168,15 @@ ul {
 .footer-info-list li:first-child {
 font-weight: 700;
 }
+.footer-info-list a {
+  text-decoration: underline;
+  }
 .copyright {
   font-size: 12px;
   color: #ffffff;
+}
+.copyright-text {
+  text-decoration: underline;
 }
 
 /* каталог */
